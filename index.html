@@ -6,25 +6,118 @@
     <title>forms</title>
   </head>
   <body>
-    <form action="./results.html" method="get">
+    <form action="./results.html" method="get" enctype="multipart/form-data">
       <label>
         Name
         <br />
         <input type="text" name="username" value="user589" />
+        <br /><br />
       </label>
-      <br /><br />
+
+      <label>
+        Email
+        <br />
+        <input type="email" name="email" placeholder="user@mail.com" />
+        <br /><br />
+      </label>
+
       <label>
         Password
         <br />
-        <input type="text" name="password" />
+        <input type="text" name="password" required />
+        <br /><br />
       </label>
-      <br /><br />
+
+      <label>
+        Eye Color
+        <br />
+        <select name="" id="">
+          <option value="Green">Green</option>
+          <option value="Blue">Blue</option>
+          <option value="Brown">Brown</option>
+        </select>
+        <br /><br />
+      </label>
+
+      <label>
+        Birthdate
+        <br />
+        <input type="date" name="dob" required />
+        <br /><br />
+      </label>
+
       <label>
         Age
         <br />
-        <input type="number" name="age" placeholder="20" />
+        <input
+          type="number"
+          name="age"
+          placeholder="20"
+          min="1"
+          max="150"
+          step="7"
+        />
+        <br /><br />
       </label>
-      <br /><br />
+
+      <label>
+        <h3>Favorite Food</h3>
+        Banana
+        <input type="checkbox" name="banana" />
+        <br /><br />
+      </label>
+      <label>
+        Apple
+        <input type="checkbox" name="apple" />
+        <br /><br />
+      </label>
+
+      <label>
+        <h3>Gender</h3>
+        Male
+        <input type="radio" name="gender" value="male" />
+        <br /><br />
+      </label>
+
+      <label>
+        Female
+        <input type="radio" name="gender" value="female" />
+        <br /><br />
+      </label>
+
+      <label>
+        <textarea name="text" cols="30" rows="10"> </textarea>
+        <br /><br />
+      </label>
+
+      <label>
+        file
+        <br />
+        <input type="file" name="file" />
+        <br /><br />
+      </label>
+
+      <label>
+        Phone
+        <br />
+        <input type="tel" name="phone no" />
+        <br /><br />
+      </label>
+
+      <label>
+        URL
+        <br />
+        <input type="url" name="url" />
+        <br /><br />
+      </label>
+
+      <label>
+        Color
+        <br />
+        <input type="color" name="color" />
+        <br /><br />
+      </label>
+
       <button type="submit">Submit</button>
     </form>
   </body>

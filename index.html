@@ -6,17 +6,23 @@
     <title>forms</title>
   </head>
   <body>
-    <form action="#">
+    <form action="./results.html" method="get">
       <label>
         Name
         <br />
-        <input type="text" />
+        <input type="text" name="username" value="user589" />
       </label>
       <br /><br />
       <label>
         Password
         <br />
-        <input type="text" />
+        <input type="text" name="password" />
+      </label>
+      <br /><br />
+      <label>
+        Age
+        <br />
+        <input type="number" name="age" placeholder="20" />
       </label>
       <br /><br />
       <button type="submit">Submit</button>
